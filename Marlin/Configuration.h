@@ -1120,7 +1120,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 260
-#define Y_BED_SIZE 160  
+#define Y_BED_SIZE 130  
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1391,7 +1391,7 @@
 
 // Homing speeds (mm/min)
 #define HOMING_FEEDRATE_XY 120*40
-#define HOMING_FEEDRATE_Z  200
+#define HOMING_FEEDRATE_Z  300
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
