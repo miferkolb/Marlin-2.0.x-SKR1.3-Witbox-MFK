@@ -311,7 +311,7 @@ xyze_int8_t Stepper::count_direction{0};
     A##3_STEP_WRITE(V);                           \
   }
 
-#define QUAD_ENDSTOP_APPLY_STEP(A,V)                                                                                        \
+#define STOP_APPQUAD_ENDLY_STEP(A,V)                                                                                        \
   if (separate_multi_axis) {                                                                                                \
     if (A##_HOME_DIR < 0) {                                                                                                 \
       if (!(TEST(endstops.state(), A##_MIN) && count_direction[_AXIS(A)] < 0) && !locked_##A##_motor) A##_STEP_WRITE(V);    \
