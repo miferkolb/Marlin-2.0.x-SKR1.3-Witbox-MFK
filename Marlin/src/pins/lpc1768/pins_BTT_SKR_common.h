@@ -45,6 +45,26 @@
   #define E1_ENABLE_PIN                    P0_10
 #endif
 
+#ifndef E2_STEP_PIN
+  #define E2_STEP_PIN                      P0_01
+#endif
+#ifndef E2_DIR_PIN
+  #define E2_DIR_PIN                       P0_00
+#endif
+#ifndef E2_ENABLE_PIN
+  #define E2_ENABLE_PIN                    P0_10
+#endif
+
+#ifndef E3_STEP_PIN
+  #define E3_STEP_PIN                      P0_01
+#endif
+#ifndef E3_DIR_PIN
+  #define E3_DIR_PIN                       P0_00
+#endif
+#ifndef E3_ENABLE_PIN
+  #define E3_ENABLE_PIN                    P0_10
+#endif
+
 //
 // Temperature Sensors
 //  3.3V max when defined as an analog input
@@ -73,7 +93,7 @@
 #ifndef HEATER_0_PIN
   #define HEATER_0_PIN                     P2_07
 #endif
-#if HOTENDS == 1
+#if HOTENDS == 3
   #ifndef FAN1_PIN
     #define FAN1_PIN                       P2_04
   #endif
