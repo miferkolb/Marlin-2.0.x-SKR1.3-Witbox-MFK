@@ -103,7 +103,6 @@
   #ifndef FAN3_PIN
     #define FAN3_PIN                       P0_10
   #endif
-
 #else
   #ifndef HEATER_1_PIN
     #define HEATER_1_PIN                   P2_04
