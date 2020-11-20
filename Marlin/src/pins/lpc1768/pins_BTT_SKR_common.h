@@ -75,11 +75,17 @@
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_1_PIN
 #endif
+#ifndef TEMP_2_PIN
+  #define TEMP_2_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_1_PIN
+#endif
+#ifndef TEMP_3_PIN
+  #define TEMP_3_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_1_PIN
+#endif
 #ifndef TEMP_BED_PIN
   #define TEMP_BED_PIN                  P0_23_A0  // A0 (T0) - (67) - TEMP_BED_PIN
 #endif
 
-#if HOTENDS == 3
+#if HOTENDS == 4
   #if TEMP_SENSOR_PROBE
     #define TEMP_PROBE_PIN            TEMP_1_PIN
   #elif TEMP_SENSOR_CHAMBER
@@ -93,7 +99,7 @@
 #ifndef HEATER_0_PIN
   #define HEATER_0_PIN                     P2_07
 #endif
-#if HOTENDS == 3
+#if HOTENDS == 4
   #ifndef FAN1_PIN
     #define FAN1_PIN                       P2_04
   #endif
@@ -103,11 +109,22 @@
   #ifndef FAN3_PIN
     #define FAN3_PIN                       P0_10
   #endif
+  #ifndef HEATER_1_PIN
+    #define HEATER_1_PIN                   P2_04
+  #endif
+  #ifndef HEATER_2_PIN
+    #define HEATER_2_PIN                   P2_04
+  #endif
+  #ifndef HEATER_3_PIN
+    #define HEATER_3_PIN                   P2_04
+  #endif
 #else
   #ifndef HEATER_1_PIN
     #define HEATER_1_PIN                   P2_04
+  #endif
   #ifndef HEATER_2_PIN
     #define HEATER_2_PIN                   P2_04
+  #endif
   #ifndef HEATER_3_PIN
     #define HEATER_3_PIN                   P2_04
   #endif
